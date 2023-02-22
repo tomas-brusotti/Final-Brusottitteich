@@ -1,0 +1,343 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**1rem = 10px**/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 4.3rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+
+/**Uitlidades**/
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-4 {
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    .img-3 {
+        padding-top: 3rem;
+    }
+}
+
+.no-margin {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnas-4 {
+        flex-basis: calc(33.3% - 1rem);
+    }
+    .columnas-8 {
+        flex-basis: calc(66.6% - 1rem);
+    }
+    .imagen-blog {
+        padding-top: 3rem;
+    }
+}
+
+
+/**botones**/
+
+.boton {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: wheat;
+    padding: 1rem 3rem;
+    margin: 1rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton-primario {
+    background-color: orange;
+}
+
+.boton-secundario {
+    background-color: green;
+    margin: 1.5rem 0rem;
+}
+
+
+/**header**/
+
+.site-header {
+    background-image: url(../img/campings.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nosotros {
+    background-image: url(../img/campings.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.navegacion a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+    .titulo h2 {
+        font-size: 6rem;
+    }
+    .titulo p {
+        font-size: 2rem;
+    }
+}
+
+.titulo {
+    color: white;
+    line-height: 2px;
+    margin-top: 15rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.n-titulo {
+    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .n-titulo {
+        margin-top: 15rem;
+    }
+}
+
+
+/**contenido principal**/
+
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    border-radius: 1rem;
+}
+
+.central-nosotros h2 {
+    margin: 1rem 0rem;
+}
+
+.articulo {
+    border: 0.1rem solid #747474;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: silver;
+}
+
+.contenido-articulo p {
+    margin: 1rem 0rem;
+}
+
+.color {
+    color: red;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: flex;
+    }
+    .articulo {
+        flex: 0 0 calc(33.3% - 1rem);
+        justify-content: space-between;
+        margin-right: 1rem;
+    }
+}
+
+
+/**blog**/
+
+.articulo-blog {
+    border-bottom: 1px solid #747474;
+    margin-top: 1rem;
+    padding: 0rem 0.5rem 2rem 0.5rem;
+}
+
+.articulo-blog:last-of-type {
+    border: none;
+}
+
+.articulo-blog h3 {
+    font-size: 4rem;
+}
+
+.articulo-blog a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/**footer**/
+
+footer {
+    background-color: black;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    color: white;
+    margin: 0rem 0 2rem 0;
+    padding-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.imagen-bolsa {
+    width: 290.69px;
+    height: 387.59px;
+}
+
+
+/**contacto**/
+
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    */
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
